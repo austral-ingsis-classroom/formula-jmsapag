@@ -29,12 +29,19 @@ public class Mapper {
   }
 
   public String getOperatorSymbol(BinaryType operator) {
-    return switch (operator) {
-      case ADD -> "+";
-      case SUBTRACT -> "-";
-      case MULTIPLY -> "*";
-      case DIVIDE -> "/";
-      case POWER -> "^";
-    };
+    switch (operator) {
+      case ADD:
+        return "+";
+      case SUBTRACT:
+        return "-";
+      case MULTIPLY:
+        return "*";
+      case DIVIDE:
+        return "/";
+      case POWER:
+        return "^";
+      default:
+        throw new IllegalArgumentException("Unknown operator: " + operator);
+    }
   }
 }

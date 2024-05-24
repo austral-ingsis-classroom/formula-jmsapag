@@ -1,15 +1,14 @@
 package edu.austral.ingsis.math;
 
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 import edu.austral.ingsis.math.binary.Binary;
 import edu.austral.ingsis.math.binary.BinaryType;
 import edu.austral.ingsis.math.unary.Module;
 import edu.austral.ingsis.math.unary.Root;
-import org.junit.jupiter.api.Test;
-
 import java.util.HashMap;
-
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
+import org.junit.jupiter.api.Test;
 
 public class ResolutionWithVariablesTest {
 

@@ -1,16 +1,15 @@
 package edu.austral.ingsis.math;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.containsInAnyOrder;
+import static org.hamcrest.Matchers.empty;
+
 import edu.austral.ingsis.math.binary.Binary;
 import edu.austral.ingsis.math.binary.BinaryType;
 import edu.austral.ingsis.math.unary.Module;
 import edu.austral.ingsis.math.unary.Root;
-import org.junit.jupiter.api.Test;
-
 import java.util.List;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsInAnyOrder;
-import static org.hamcrest.Matchers.empty;
+import org.junit.jupiter.api.Test;
 
 public class ListVariablesTest {
 

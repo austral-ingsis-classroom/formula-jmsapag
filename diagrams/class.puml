@@ -1,0 +1,49 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Function{
+resolve(Map<String, Double> variables): double
+print(): String
+}
+
+
+class Variable implements Function{
+String: name
+}
+
+class Literal implements Function{
+float: literal
+}
+
+class Binary implements Function{
+Function: left
+Function: right
+BinaryType: operator
+}
+
+abstract class Unary extends Function{
+Function: function
+}
+
+class Module extends Unary{}
+class Root extends Unary{}
+
+class Mapper{
+Map: operators
+getOperatorFunction()
+getOperatorSymbol()
+}
+
+class Formatter{
+format()
+}
+
+Binary --> Mapper
+Function --* Binary
+Function --* Unary
+Formatter -> Function
+
+
+
+
+@enduml
