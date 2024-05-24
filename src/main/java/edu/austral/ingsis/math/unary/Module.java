@@ -2,7 +2,6 @@ package edu.austral.ingsis.math.unary;
 
 import edu.austral.ingsis.math.Function;
 import edu.austral.ingsis.math.utils.Try;
-
 import java.util.List;
 import java.util.Map;
 

@@ -1,7 +1,6 @@
 package edu.austral.ingsis.math;
 
 import edu.austral.ingsis.math.utils.Try;
-
 import java.util.List;
 import java.util.Map;
 
